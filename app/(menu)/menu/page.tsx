@@ -3,7 +3,7 @@ import ImageWithText from "@/components/ImageWithText";
 const Menu: React.FC = () => {
   return (
     <div className="flex items-center justify-center min-h-screen ">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 mb-12">
         <ImageWithText
           imageUrl="/entradas.jpg"
           text="Entradas"
