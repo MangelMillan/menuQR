@@ -1,5 +1,5 @@
-const entradas: React.FC = () => {
-  return <div>wola</div>;
-};
 
-export default entradas;
+export default function entradas(){
+  return (
+  <div>postres</div>) 
+}

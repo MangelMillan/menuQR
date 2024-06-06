@@ -1,5 +1,5 @@
-const comidas: React.FC = () => {
-  return <div>wola</div>;
-};
 
-export default comidas;
+export default function comidas(){
+    return (
+    <div>comidas</div>) 
+}

@@ -1,5 +1,5 @@
-const postres: React.FC = () => {
-  return <div>wola</div>;
-};
 
-export default postres;
+export default function postres(){
+  return (
+  <div>postres</div>) 
+}

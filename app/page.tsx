@@ -1,7 +1,12 @@
-import ImageWithText from "@/components/ImageWithText";
-
+import Menu from "./(menu)/menu/page";
 const Home: React.FC = () => {
-  return <div>wola</div>;
+  return( 
+    <div>  
+      <Menu/>
+    </div>
+  
+    )
+
 };
 
 export default Home;
