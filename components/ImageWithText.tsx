@@ -9,13 +9,12 @@ interface ImageWithTextProps {
 
 const ImageWithText: FC<ImageWithTextProps> = ({ imageUrl, text, linkUrl }) => {
   return (
-    <a href={linkUrl} className="relative w-64 h-64 block">
+    <a href={linkUrl} className="relative block w-full h-64 sm:w-64">
       <Image
         src={imageUrl}
         alt="background image"
-        layout="fill"
-        objectFit="cover"
-        className="rounded-lg"
+        fill
+        className="rounded-lg object-cover"
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
         <h1 className="text-white text-2xl font-bold">{text}</h1>
