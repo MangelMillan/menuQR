@@ -12,7 +12,7 @@ export default function MenuLayout({ children }: { children: ReactNode }) {
         priority
         className="fixed inset-0 object-cover w-full h-full"
       />
-      <header className="bg-[#27649C] fixed w-full z-10">
+      <header className="bg-[#27649C] fixed w-full z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
           <div className="flex-shrink-0">
             <a href="menu">
