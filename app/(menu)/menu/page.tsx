@@ -9,10 +9,7 @@ const Menu: React.FC = () => {
           text="Entradas"
           linkUrl="/entradas"
         />
-        <ImageWithText 
-        imageUrl="/faro.jpg" 
-        text="Comidas" 
-        linkUrl="/comidas" />
+        <ImageWithText imageUrl="/faro.jpg" text="Comidas" linkUrl="/comidas" />
         <ImageWithText
           imageUrl="/bloody.jpg"
           text="Bebidas"
