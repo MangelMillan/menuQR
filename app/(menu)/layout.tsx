@@ -5,32 +5,24 @@ import Logo from "../../public/ZarandeadoLogo.svg";
 
 export default function MenuLayout({ children }: { children: ReactNode }) {
   return (
-    <body>
-      <div className="absolute inset-0 overflow-hidden">
-        <Image
-          src={BackgroundImage}
-          alt="background image"
-          priority
-          quality="100"
-          className="object-cover"
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "300vw",
-            height: "300vh",
-          }}
-        />
-        <Image
-          src={Logo}
-          alt="Logo"
-          className="absolute left-4 top-4 object-contain md:left-10 md:top shadow-2xl"
-          width={120}
-          height={120}
-          priority
-        />
-        {children}
-      </div>
-    </body>
+    <div className="relative min-h-screen">
+      <Image
+        src={BackgroundImage}
+        alt="background image"
+        priority
+        className="fixed inset-0 object-cover w-full h-full"
+      />
+      <header className="bg-[#27649C] fixed w-full z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
+          <div className="flex-shrink-0">
+            <a href="menu">
+              <Image src={Logo} alt="Logo" width={120} height={120} priority />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main className="relative pt-24">{children}</main>
+    </div>
   );
 }

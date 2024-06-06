@@ -2,19 +2,23 @@ import ImageWithText from "@/components/ImageWithText";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex items-center justify-center min-h-screen ">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
         <ImageWithText
           imageUrl="/entradas.jpg"
           text="Entradas"
-          linkUrl="/page1"
+          linkUrl="/entradas"
         />
-        <ImageWithText imageUrl="/faro.jpg" text="Comidas" linkUrl="/page2" />
-        <ImageWithText imageUrl="/bloody.jpg" text="Bebidas" linkUrl="/page3" />
+        <ImageWithText imageUrl="/faro.jpg" text="Comidas" linkUrl="/comidas" />
+        <ImageWithText
+          imageUrl="/bloody.jpg"
+          text="Bebidas"
+          linkUrl="/bebidas"
+        />
         <ImageWithText
           imageUrl="/postres.jpg"
           text="Postres"
-          linkUrl="/page4"
+          linkUrl="/postres"
         />
       </div>
     </div>

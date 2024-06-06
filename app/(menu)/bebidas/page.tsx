@@ -1,9 +1,5 @@
-"use client";
+const bebidas: React.FC = () => {
+  return <div>wola</div>;
+};
 
-import React from "react";
-
-export default class Page extends React.Component {
-  render() {
-    return <p>Hello world</p>;
-  }
-}
+export default bebidas;
