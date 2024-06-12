@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import BackgroundImage from "../../public/BackraunOP.svg";
-import Logo from "../../public/ZarandeadoLogo.png";
+import Logo from "../../public/ZarandeadoLogo.svg";
 
 export default function MenuLayout({ children }: { children: ReactNode }) {
   return (
